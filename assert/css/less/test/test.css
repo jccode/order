@@ -59,3 +59,9 @@
   -o-transform: skew(30deg, 0deg);
   transform: skew(30deg, 0deg);
 }
+.checkbox.ios:before {
+  content: "ON";
+}
+.checkbox.ios:after {
+  content: "OFF";
+}

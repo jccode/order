@@ -63,6 +63,12 @@
 .sidebar .nav-header {
   font-size: 14px;
 }
+.container-fixed {
+  margin-left: 0px;
+}
+.querybar form {
+  margin-bottom: 10px;
+}
 .red {
   color: red;
 }

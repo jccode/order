@@ -6,7 +6,7 @@
 @import "../variables.less";
 @import "../mixins.less";
 
-.container div {
+.container > div {
 	width: 100px;
 	height: 100px;
 	background-color: #ccc;
@@ -38,15 +38,58 @@
 .skew {
 	.skew(30deg, 0deg);
 }
+div.iphone-checkbox {
+	width: 200px;
+}
+
+@ios_checkbox_height: 32px;
+@ios_checkbox_width: 80px;
+
 .checkbox.ios {
+	#gradient > .vertical(#14539C, #3095C7);
+	border: 1px solid #555;
+	.border-radius(4px);
+	height: @ios_checkbox_height;
+	width: @ios_checkbox_width;
+	display: inline-block;
+	.ie7-inline-block();
+
+	&:before, &:after {
+		height: @ios_checkbox_height;
+		line-height: @ios_checkbox_height;
+		color: #FFF;
+		font-size: 14px;
+		text-shadow: 0 -1px 1px #093B5C;
+		position: relative;
+		z-index: -1;
+	}
+
 	&:before {
 		content: "ON";
+		float: left;
 	}
 	&:after {
 		content: "OFF";
+		float: right;
+		margin-top: -@ios_checkbox_height;
 	}
 
-	input[type="checkbox"] {
-		// display: none;
+	> input[type="checkbox"] {
+		display: none;
+		+ i {
+			// border: 1px dashed #f00;
+		}
+		&:checked + i {
+			margin-left: (@ios_checkbox_width / 2) - 2;
+		}
+	}
+
+	> i {
+		display: block;
+		height: @ios_checkbox_height - 2;
+		width: @ios_checkbox_width / 2;
+		#gradient > .vertical(#A1A1A1, #FFFFFF);
+		border: 1px solid #E5E5E5;
+		.border-radius(3px);
 	}
 }

@@ -232,8 +232,11 @@ body {
 .container-fixed {
   margin-left: 0px;
 }
+.querybar {
+  height: 42px;
+}
 .querybar form {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 .red {
   color: red;

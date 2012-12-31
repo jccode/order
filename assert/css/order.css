@@ -263,6 +263,10 @@ body {
 .table-list .table-item.expand .body {
   color: #333;
 }
+.table-list .table-item.abnormal .order-address,
+.table-list .table-item.abnormal .order-tel {
+  color: #B94A48;
+}
 .table-list .row {
   margin-left: 0px;
 }
@@ -274,6 +278,9 @@ body {
 .table-list > ul > li {
   padding: 10px 10px;
   border-bottom: 1px solid #E5E5E5;
+}
+.table-list > ul > li:hover .order-btn-abnormal {
+  visibility: visible;
 }
 .table-list .head {
   font-weight: bold;
@@ -297,8 +304,12 @@ body {
 .table-list .order-price {
   color: #B94A48;
 }
-.table-list .order-btn-out {
+.table-list .order-btn-out,
+.table-list .order-btn-abnormal {
   margin-left: 10px;
+}
+.table-list .order-btn-abnormal {
+  visibility: hidden;
 }
 .table-list .body {
   color: #999;
@@ -318,6 +329,9 @@ body {
 }
 .table-list .body ul.food-list li {
   margin: 5px 0px;
+}
+.table-list-comment {
+  padding: 5px 20px;
 }
 .red {
   color: red;

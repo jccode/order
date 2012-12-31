@@ -25,7 +25,7 @@
 						</form>
 					</div>
 					<div class="span4">
-						<button class="btn btn-link">超过20分钟</button>
+						<button class="btn btn-link" data-toggle="button">超过20分钟</button>
 					</div>
 					<div class="span3">
 						<label for="auto_checkbox" class="checkbox ios pull-right">
@@ -37,56 +37,6 @@
 					</div>
 				</div>
 			</div>
-			<!-- 
-			<table class="table table-striped">
-				<tr>
-					<th>订单编号</th>
-					<th>下单时间</th>
-					<th>预计送达时间</th>
-					<th>送餐地址</th>
-					<th>联系电话</th>
-					<th>餐点</th>
-					<th>操作</th>
-				</tr>
-				<tr>
-					<td>0001</td>
-					<td>10:00</td>
-					<td>11:00</td>
-					<td>香丽二楼</td>
-					<td>15818501051</td>
-					<td>番茄+牛肉</td>
-					<td><input type="button" class="btn" value="出单"></td>
-				</tr>
-				<tr>
-					<td>0002</td>
-					<td>10:20</td>
-					<td>11:00</td>
-					<td>景发大厦</td>
-					<td>15818501052</td>
-					<td>榨菜+猪肝+紫菜</td>
-					<td><input type="button" class="btn" value="出单"></td>
-				</tr>
-				<tr>
-					<td>0003</td>
-					<td>10:30</td>
-					<td>11:30</td>
-					<td>商报大厦</td>
-					<td>15818501053</td>
-					<td>凉瓜+肉片</td>
-					<td><input type="button" class="btn" value="出单"></td>
-				</tr>
-				<tr>
-					<td>0004</td>
-					<td>11:10</td>
-					<td>12:00</td>
-					<td>香丽一楼</td>
-					<td>15818501054</td>
-					<td>茄子+冬瓜</td>
-					<td><input type="button" class="btn" value="出单"></td>
-				</tr>
-			</table> 
-			-->
-
 			<div class="table-list">
 				<ul>
 					<li>
@@ -97,7 +47,7 @@
 									<span class="order-tel">15818501051</span>
 								</div>
 								<div class="right">
-									<span class="order-price">13.00元 (共4个)</span>
+									<span class="order-price">13.00元 (共8个)</span>
 									<a href="#" class="btn btn-mini order-btn-out"><i class="icon-print"></i>&nbsp;出单</a>
 								</div>
 							</div>
@@ -222,6 +172,7 @@
 		<script type="text/javascript" src="assert/js/jquery-1.8.0.js"></script>
 		<script type="text/javascript" src="assert/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="assert/js/jquery.pagination.js"></script>
+		<script type="text/javascript" src="assert/js/order-tablelist.js"></script>
 		<script type="text/javascript">
 
 			jQuery(function ($) {
@@ -235,22 +186,6 @@
 					refresh: false
 				});
 
-				$(".table-list .order-address-tel").click(function (e) {
-					var $this = $(this), 
-						$tableItem = $this.closest("div.table-item"), 
-						expand = $tableItem.hasClass("expand");
-
-					if(!expand) {
-						$tableItem.addClass("expand");
-						$("div.food-collapse", $tableItem).hide();
-						$("div.food-expand", $tableItem).slideDown();
-					} else {
-						$tableItem.removeClass("expand");
-						$("div.food-expand", $tableItem).slideUp(function () {
-							$("div.food-collapse", $tableItem).show();
-						});
-					}
-				});
 			});
 
 		</script>

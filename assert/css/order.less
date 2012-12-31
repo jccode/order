@@ -116,6 +116,12 @@ body {
 				color: #333;
 			}
 		}
+
+		&.abnormal {
+			.order-address, .order-tel {
+				color: #B94A48;
+			}
+		}
 	}
 
 	.row {
@@ -130,6 +136,12 @@ body {
 		> li {
 			padding: 10px 10px;
 			border-bottom: 1px solid #E5E5E5;
+
+			&:hover  {
+				.order-btn-abnormal {
+					visibility: visible;
+				}
+			}
 		}
 	}
 
@@ -161,8 +173,12 @@ body {
 		color: #B94A48;
 	}
 
-	.order-btn-out {
+	.order-btn-out, .order-btn-abnormal {
 		margin-left: 10px;
+	}
+
+	.order-btn-abnormal {
+		visibility: hidden;
 	}
 
 	.body {
@@ -189,9 +205,12 @@ body {
 				margin: 5px 0px;
 			}
 		}
-
 		
 	}
+}
+
+.table-list-comment {
+	padding: 5px 20px;
 }
 
 

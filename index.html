@@ -78,7 +78,7 @@
 					</div>
 				</div>
 				<div class="span10">
-					<iframe id="mainFrame" src="" frameborder="0" width="100%" height="480px" style="vertical-align: top;"></iframe>
+					<iframe id="mainFrame" src="" frameborder="0" width="102%" height="100%" style="vertical-align: top;"></iframe>
 				</div>
 			</div>
 		</div>
@@ -99,10 +99,17 @@
 				// 选中第一个.
 				.eq(1).click();
 
+				initHeight();
+
 			});
 
 			function setFrameURL (url) {
 				$("#mainFrame").attr("src", url);
+			}
+
+			function initHeight () {
+				var height = $(document).height() - $(".navbar-fixed-top").outerHeight() - 60;
+				$("#mainFrame").attr("height", height);
 			}
 
 		</script>

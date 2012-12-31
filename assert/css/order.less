@@ -101,6 +101,23 @@ body {
 }
 
 .table-list {
+	border: 1px solid #E5E5E5;
+	.border-radius(4px);
+	.box-shadow(0 1px 1px rgba(0, 0, 0, .05) inset);
+
+	.table-item {
+		padding: 5px 10px;
+
+		&.expand {
+			// border: 1px solid #E5E5E5;
+			// .border-radius(4px);
+
+			.body {
+				color: #333;
+			}
+		}
+	}
+
 	.row {
 		margin-left: 0px;
 	}
@@ -109,31 +126,71 @@ body {
 		padding: 0px;
 		margin: 0px;
 		list-style: none outside none;
+
+		> li {
+			padding: 10px 10px;
+			border-bottom: 1px solid #E5E5E5;
+		}
+	}
+
+	.head {
+		font-weight: bold;
+		height: 30px;
+		line-height: 30px;
+		color: #000;
+	}
+
+	.order-number {
+		margin-right: 20px;
+	}
+
+	.order-address-tel:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	.order-address {
+		margin-right: 20px;
+	}
+
+	.order-tel {
+		color: #468847;
+	}
+
+	.order-price {
+		color: #B94A48;
 	}
 
 	.order-btn-out {
-		float: right;
+		margin-left: 10px;
 	}
 
 	.body {
-		.order-price {
-			float: right;
+		color: #999;
+
+		.food-collapse {
+			ul.food-list li {
+				float: left;
+				width: 180px;
+			}
 		}
 
 		.food-expand {
 			display: none;
+			background-color: #F2F2F2;
 		}
 
 		ul.food-list {
 			padding: 0px;
-			margin-left: 20px;
+			margin: 0px;
 			list-style: none inside none;
 
 			li {
-				float: left;
-				width: 220px;
+				margin: 5px 0px;
 			}
 		}
+
+		
 	}
 }
 
@@ -141,4 +198,13 @@ body {
 // Font
 .red {
 	color: red;
+}
+
+// Utilities
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
 }

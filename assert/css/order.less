@@ -93,6 +93,9 @@ body {
 	margin-left: 0px;
 }
 
+
+// todo & history
+// -------------------------------- 
 .querybar {
 	height: 42px;
 	form {
@@ -212,6 +215,37 @@ body {
 .table-list-comment {
 	padding: 5px 20px;
 }
+
+
+// catering
+// --------------------------------
+.category {
+
+	// ul
+	> ul {
+		padding: 0px;
+		margin: 0px;
+		list-style: none outside none;
+		display: inline-block;
+		.ie7-inline-block();
+		font-size: 0px;
+		.box-shadow(2px 2px 4px rgba(0, 0, 0, .3));
+
+		> li {
+			display: inline-block;
+			.ie7-inline-block();
+			margin: 0px 0px 0px;
+			padding: 0px 10px 0px 5px;
+			border: 1px solid rgba(0, 0, 0, .15);
+
+			label {
+				margin-top: 3px;
+			}
+		}
+	}
+
+}
+
 
 
 // Font

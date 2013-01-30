@@ -431,12 +431,6 @@ ul.food-area-list > li .food-add {
 .control-group.control-group-left .control-label {
   text-align: left;
 }
-#dialog-add-package.modal {
-  margin-top: -300px;
-}
-#dialog-add-package .modal-body {
-  max-height: 480px;
-}
 #dialog-add-package .food-to-add {
   border: 1px solid rgba(0, 0, 0, 0.15);
   overflow: auto;

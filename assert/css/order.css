@@ -239,6 +239,9 @@ body {
 .sidebar > ul > li > a {
   padding-left: 25px;
 }
+.container-fluid.main {
+  padding-right: 0px;
+}
 .container-fixed {
   margin-left: 0px;
 }
@@ -247,6 +250,9 @@ body {
 }
 .querybar form {
   margin-bottom: 0px;
+}
+.search-query-width {
+  width: 126px;
 }
 .table-list {
   border: 1px solid #E5E5E5;

@@ -242,7 +242,7 @@ body {
 .container-fluid.main {
   padding-right: 0px;
 }
-.container-fixed {
+.row-fluid-fixed {
   margin-left: 0px;
 }
 .querybar {
